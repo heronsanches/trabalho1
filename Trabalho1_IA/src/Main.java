@@ -9,7 +9,7 @@ import java.util.Set;
 public class Main {
 	
 	private static ListaAdjacencia grafo;
-	private final static String caminho = "/home/fedora/workspaces/workspace_graduation";
+	private final static String caminho = "/home/fedora/workspaces/workspace_graduation/trabalho1";
 	private final static String nomeArquivo = caminho+"/Trabalho1_IA/src/espacoEstados.txt";
 	private static Scanner entrada;
 
@@ -17,7 +17,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		geraListaAdjacencia();
-
+		new BuscaLargura(grafo, 'C', 'I');
+		
 	}
 	
 

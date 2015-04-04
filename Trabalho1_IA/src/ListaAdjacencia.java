@@ -6,18 +6,22 @@ import java.util.Set;
  * adjacências. */
 public class ListaAdjacencia {
 	
-	private Map<Character, Set<Character>> grafo;
+	private Map<Character, Set<Character>> listaAdjacencia;
 	
 	
 	public ListaAdjacencia(Hashtable<Character, Set<Character>> grafo) {
 		
-		this.grafo = new Hashtable<Character, Set<Character>>(26);
-		this.grafo.putAll(grafo);
+		this.listaAdjacencia = new Hashtable<Character, Set<Character>>(26);
+		this.listaAdjacencia.putAll(grafo);
 		
 	}
 	
 	
-	
+	public Map<Character, Set<Character>> getListaAdjacencia(){
+		
+		return listaAdjacencia;
+		
+	}
 	
 	
 }
